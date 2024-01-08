@@ -1,13 +1,13 @@
-/* TAGS */
+/* Styles */
 a {
-    color: #22333B;
+    color: #ffffff;
     text-decoration: none;
 }
 a:hover {
-    color:#4FB286;
+    color:rgba(176, 231, 238, 0.6);
 }
 body {
-    background-color: #F2F4F3;
+    background-color:  rgba(245, 236, 224, 1);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.5;
 }
@@ -15,8 +15,8 @@ h1, h2, h3, h4, h5, h6{
     margin-bottom: 1em;
 }
 footer{
-    background-color: #22333B;
-    color:#F2F4F3;
+    background-color: rgba(176, 231, 238, 0.6);
+    color:#000000;
     font-size:.9em;
     margin-top: 4em;
     padding:1.11em 0;
@@ -39,29 +39,30 @@ footer{
 .rounded-image img{
     display: block;
     width: 100%;
-    border-radius: 8px;
+    border-radius: 60px;
 }
 .subtitle{
     margin-top : 2em;
 }
 .summary {
-    padding-left:40px;
+    padding-left: 40px;
 }
 .summary li {
     margin-top: 1em;
 }
 .button {
-    background-color:  rgba(245, 236, 224, 1);
-    color: #fff;
+    background-color: rgba(176, 231, 238, 0.6);
+    color: #000000;
     border:none;
     border-radius: .25em;
     padding: .5em .75em;
 }
 .button:hover{
-    background-color: #4FB286;
-    color: #fff;
+    background-color: rgba(176, 231, 238, 0.6);
+    color: #ffffff;
 }
 .navbar {
+    background-color: rgba(127, 103, 91, 1);
     border-bottom: 1px solid #22333B;
     padding: .5em;
 }
@@ -76,8 +77,8 @@ footer{
     padding: 0;
 }
 .navbar-nav li {
-    padding: .5em;
-    margin: 0 .5em;
+    padding: .7em;
+    margin: 0 .9em;
 }
 .contact-form label, 
 .contact-form input, 
@@ -208,4 +209,7 @@ footer{
         font-size: .75em;
         margin-top: .5em;
         text-align: center;
+    }
+    .mainMenuItems{
+        width: 100%;
     }
