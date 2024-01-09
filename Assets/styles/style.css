@@ -36,10 +36,10 @@ footer{
     margin-top:2em;
     margin-bottom:2em
 }
-.rounded-image img{
+.rounded-image img {
     display: block;
     width: 100%;
-    border-radius: 60px;
+    border-radius: 35px;
 }
 .subtitle{
     margin-top : 2em;
