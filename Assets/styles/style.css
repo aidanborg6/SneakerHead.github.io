@@ -1,6 +1,6 @@
 /* Styles */
 a{
-    color: #000000;
+    color: #ffffff;
     text-decoration: none;
 }
 a:hover {
@@ -221,18 +221,32 @@ footer{
         font-weight: 100; font-size:45px; line-height: 200px;
     }
 
-/* Make text center aligned */
-    .textblog{
+/* Text for blog*/
+.textblog{
+    text-align: center;
+}
+    .textblog a{
         text-align: center;
+        color: #000;
+    }
+    .textblog a:hover {
+        color:rgb(103, 81, 67);
     }
 
 /* sign up page*/
 .sign-up{
     background-color: rgb(255, 255, 255);
+    color: black;
     border-radius: 3px;
     width: 360px;
     height: 620px;
     margin: auto;
+}
+.sign-up a{
+    color: #000;
+}
+.sign-up a:hover{
+    color: #3b6c6c;
 }
 
 h1{
@@ -269,6 +283,9 @@ input[type="button"]{
     background-color: #a1a3a5;
     color: white;
     font-size: 18px;
+}
+input:hover {
+    color:rgb(1, 7, 96);
 }
 
 p{
