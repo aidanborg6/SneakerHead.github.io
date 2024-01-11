@@ -150,7 +150,7 @@ form{
     margin-left: 20px;
 }
 
-form label{
+/* form label{
     display: flex;
     margin-top: 20px;
     font-size: 18px;
@@ -175,7 +175,7 @@ input[type="button"]{
 }
 input:hover {
     color:rgb(1, 7, 96);
-}
+} */
 
 p{
     text-align: center;
