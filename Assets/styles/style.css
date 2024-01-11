@@ -199,6 +199,7 @@ p{
 }
 
 /* contact page*/
+
 body{
     font-size: 14px;
 }
@@ -278,4 +279,81 @@ tr td:first-child{
 }
 tr td{
     padding-top: 20px;
+}
+
+/*Collection page*/
+
+/*The banner (pictures)*/
+
+:root{
+    --nav-ctrl-color: rgba(127, 103, 91, 1);
+    --nav-ctrl-size: 1.25rem;
+    --nav-ctrl-inner-size: 1rem;
+}
+
+.banner-item{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+    display: none;
+    padding-bottom:30%;
+    width: 100%;
+}
+
+.banner-nav{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.hidden{
+    display: none;
+}
+
+.nav-dot{
+    align-items: center;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--nav-ctrl-color);
+    border-radius: 100%;
+    display: flex;
+    height: var(--nav-ctrl-size);
+    justify-content: center;
+    margin: 0 .25rem;
+    width: var(--nav-ctrl-size);
+}
+.nav-dot-inner{
+    background-color: var(--nav-ctrl-color);
+    border-radius: 100%;
+    display: block;
+    opacity: 0;
+    height: 0;
+    transition: all .2s ease;
+    width: 0;
+}
+/* mouse hover over the dot*/
+.nav-dot:hover .nav-dot-inner {
+    background-color: rgb(1, 7, 96);
+    opacity: .5;
+    height: var(--nav-ctrl-inner-size);
+    width: var(--nav-ctrl-inner-size);
+}
+
+/*as we learnt if many CSS elements appear the same way, they could be seperated  with a comma.*/
+
+#bnr-1-ctrl:checked ~ .banner-nav #bnr-1-dot .nav-dot-inner,
+#bnr-2-ctrl:checked ~ .banner-nav #bnr-2-dot .nav-dot-inner,
+#bnr-3-ctrl:checked ~ .banner-nav #bnr-3-dot .nav-dot-inner,
+#bnr-4-ctrl:checked ~ .banner-nav #bnr-4-dot .nav-dot-inner{
+    height: var(--nav-ctrl-inner-size);
+    opacity: 1;
+    width: 100%;
+}
+
+#bnr-1-ctrl:checked ~ .banner-content #banner-1,
+#bnr-2-ctrl:checked ~ .banner-content #banner-2,
+#bnr-3-ctrl:checked ~ .banner-content #banner-3,
+#bnr-4-ctrl:checked ~ .banner-content #banner-4{
+    display: block;
 }

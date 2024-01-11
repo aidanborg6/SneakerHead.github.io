@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sneaker Head | Blog</title>
+    <title>Sneaker Collection</title>
     <link rel="stylesheet" href="Assets/styles/grid.css">
     <link rel="stylesheet" href="Assets/styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,7 +41,39 @@
         </div>
     </nav>
 
+        
+    <div class="container">
+        <main>
+            <div class="row">
+                <div class="col-12">
+                    <header class="row">
+                        <h1>Sneaker Collection</h1>
+                    </header>
+                </div>
+            </div>
 
+
+    <!-- Hidden banner controls-->
+    <input class= "hidden" type="radio" name="banner-controls" id="bnr-1-ctrl" checked>
+    <input class="hidden" type="radio" name="banner-controls" id="bnr-2-ctrl">
+    <input class="hidden" type="radio" name="banner-controls" id="bnr-3-ctrl">
+    <input class="hidden" type="radio" name="banner-controls" id="bnr-4-ctrl">
+
+    <!--Banner images-->
+    <div class="banner-content">
+        <div class="banner-item" id="banner-1" style="background-image: url(assets/images/c1.jpg);"></div>
+        <div class="banner-item" id="banner-2" style="background-image: url(assets/images/c2.jpg);"></div>
+        <div class="banner-item" id="banner-3" style="background-image: url(assets/images/c3.jpg);"></div>
+        <div class="banner-item" id="banner-4" style="background-image: url(assets/images/c4.jpg);"></div>
+    </div>
+    
+    <!-- The Navigation-->
+    <div class="banner-nav">    
+        <label for="bnr-1-ctrl" class="nav-dot" id="bnr-1-dot"><i class="nav-dot-inner"></i></label>
+        <label for="bnr-2-ctrl" class="nav-dot" id="bnr-2-dot"><i class="nav-dot-inner"></i></label>
+        <label for="bnr-3-ctrl" class="nav-dot" id="bnr-3-dot"><i class="nav-dot-inner"></i></label>
+        <label for="bnr-4-ctrl" class="nav-dot" id="bnr-4-dot"><i class="nav-dot-inner"></i></label>
+    </div>
 
 
 
