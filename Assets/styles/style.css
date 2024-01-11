@@ -340,7 +340,7 @@ tr td{
     width: var(--nav-ctrl-inner-size);
 }
 
-/*as we learnt if many CSS elements appear the same way, they could be seperated  with a comma.*/
+/*as we learnt, if many CSS elements appear the same way, they could be seperated  with a comma.*/
 
 #bnr-1-ctrl:checked ~ .banner-nav #bnr-1-dot .nav-dot-inner,
 #bnr-2-ctrl:checked ~ .banner-nav #bnr-2-dot .nav-dot-inner,
