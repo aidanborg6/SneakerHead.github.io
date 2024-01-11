@@ -335,7 +335,7 @@ tr td{
 /* mouse hover over the dot*/
 .nav-dot:hover .nav-dot-inner {
     background-color: rgb(1, 7, 96);
-    opacity: .5;
+    opacity: 0.5;
     height: var(--nav-ctrl-inner-size);
     width: var(--nav-ctrl-inner-size);
 }
@@ -348,7 +348,7 @@ tr td{
 #bnr-4-ctrl:checked ~ .banner-nav #bnr-4-dot .nav-dot-inner{
     height: var(--nav-ctrl-inner-size);
     opacity: 1;
-    width: 100%;
+    width: var(--nav-ctrl-inner-size);
 }
 
 #bnr-1-ctrl:checked ~ .banner-content #banner-1,
