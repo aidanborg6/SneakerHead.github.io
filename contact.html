@@ -44,59 +44,71 @@
             </a>
         </div>
     </nav>
+    
+                <!--Contact page setup-->
 
-    <div class="contact-container">
-
+    <main>
     <form action="mailto:aidanborg5@gmail.com"
-        method="post"
-        enctype="plain text/plain">
-    </form>
+    method="post"
+    enctype="text/plain" 
+    class="contact-container">
         <h1>Connect With Us</h1>
         <p>Feel free to send us any questions you might have. <br> We would love to respond to your questions :)
         </p>
         <div class="contact-box">
             <div class="contact-left">
+
+                <!--Enter Name -->
+
                 <h3>Send your request</h3>
-                <form>
                     <div class="input-row">
                         <div class="input-group">
-                            <label>Name</label>
-                            <input type="text" placeholder="Enter Name" required>
-                        </div>
-                        <div class="input-group">
-                            <label> Phone</label>
-                            <input type="text" placeholder="Enter Phone number">
+                            <label for="name-input">Name</label>
+                            <input type="text" id="name-input" name="name" placeholder="Enter Name" required>
                         </div>
 
+                <!--Enter Phone -->
+
+                        <div class="input-group">
+                            <label for="phone-input" > Phone</label>
+                            <input type="text" id="phone-input" name="phone" placeholder="Enter Phone number">
+                        </div>
                     </div>
+
+                <!--Enter Email -->
+
                     <div class="input-row">
                         <div class="input-group">
-                            <label>Email</label>
-                            <input type="email"
-                            placeholder="Enter Email" required>
+                            <label for="input-email">Email</label>
+                            <input type="email" id="email-input" name="email" placeholder="Enter Email" required>
                         </div>
+
+                <!--Select Topic -->
+
                         <div class="input-group">
-                            <label> Topic </label>
-                            <select type="text" placeholder="Enter Subject" id="">
+                            <label for="input-topic" > Topic </label>
+                            <select type="text" id="topic-input" name="topic" placeholder="Enter Subject" id="">
                             <option value=""></option>
                             <option value="tech-support">Technical Support</option>
                             <option value="Review">Review</option>
                             <option value="Other">Other</option>
                             </select>
                         </div>
-
                     </div>
 
-                    <label>Message</label>
-                    <textarea rows="5" placeholder="Enter your message here..." required></textarea>
+                <!--Enter Message -->
 
+                    <label for="input-message">Message</label>
+                    <textarea rows="5" id="message-input" name="message" placeholder="Enter your message here..." required></textarea>
                     <button type="submit">Send</button>
                     <button type="reset">Cancel</button>
-                </form>
             </div>
-            <div class="contact-right">
-                <h3>Reach Us</h3>
 
+                <!--Right side -->
+
+            <div class="contact-right">
+
+                <h3>Reach Us</h3>
                 <table>
                     <tr>
                         <td>Email</td>
@@ -118,6 +130,8 @@
             </div>
         </div>
 </div>
+</form>
+</main>
 <footer-login>
     <div class="container">
         &copy; 2024, Aidan J Borg

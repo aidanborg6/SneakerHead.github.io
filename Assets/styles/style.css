@@ -1,4 +1,4 @@
-/* Styles */
+/* link styles */
 a{
     color: #ffffff;
     text-decoration: none;
@@ -6,6 +6,7 @@ a{
 a:hover {
     color:rgb(163, 205, 210);
 }
+/* body , headers and footer styles */
 body {
     background-color:  rgba(245, 236, 224, 1);
     font-family: 'ABeeZee', sans-serif;;
@@ -34,39 +35,41 @@ footer-login{
     position: absolute;
     width: 100%;
 }
-/* CLASSES */
-.blog-post header{
+
+/* home page style*/
+
+.home-post header{
     text-align: center;
     margin-top: 4em;
 }
-.blog-post .image{
-    margin-top:2em;
-    margin-bottom:2em
-}
-.rounded-image img{
+.blog-image img{
     display: block;
     width: 100%;
     border-radius: 60px;
 }
+
+/* contact button Styles */
 .button {
     background-color:rgba(176, 231, 238, 0.6);
-    color: #000000;
     border:none;
     border-radius: .90em;
+    color: #000000;
     padding: .5em .75em;
 }
 .button:hover{
     background-color: rgba(182, 247, 255, 1);
     color: #000000;
 }
+
+/* navigation bar styles */
 .navbar {
     background-color: rgba(127, 103, 91, 1);
     border-bottom: 15px solid rgba(182, 246, 255, 0.778);
     padding: .5em;
 }
 .navbar .container {
-    display: flex;
     align-items:center;
+    display: flex;
     justify-content: space-between;
 }
 .navbar-nav {
@@ -78,37 +81,6 @@ footer-login{
     padding: .7em;
     margin: 0 .9em;
 }
-    figure{
-        height:100%;
-        overflow:hidden;
-    }
-    
-    .about-image img{
-        height:90%;
-        width:auto;
-        position: relative;
-        transform: translateX(-43%);
-    }
-    .about-image figcaption, .image figcaption {
-        font-size: .75em;
-        margin-top: .5em;
-        text-align: center;
-    }
-    .mainMenuItems{
-        width: 100%;
-    }
-
-    .login{
-        color: rgba(127, 103, 91, 1); 
-        font-size: x-small; 
-        width: 624px; 
-        height:  114; 
-        top: 840px; left: 800px; 
-        position: absolute; 
-        font-family:goldman system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
-        font-style: normal; 
-        font-weight: 100; font-size:45px; line-height: 200px;
-    }
 
 /* Text for blog*/
 .textblog{
@@ -122,14 +94,14 @@ footer-login{
         color:rgb(103, 81, 67);
     }
 
-/* sign up page*/
+/* Sign up page*/
 .sign-up{
     background-color: rgb(255, 255, 255);
-    color: black;
     border-radius: 3px;
-    width: 360px;
-    height: 620px;
+    color: black;
     margin: auto;
+    height: 620px;
+    width: 360px;
 }
 .sign-up a{
     color: #000;
@@ -139,48 +111,44 @@ footer-login{
 }
 
 h1{
-    text-align: center;
     padding-top: 15px;
+    text-align: center;
 }
 h4{
     text-align: center;
 }
 form{
-    width: 300px;
     margin-left: 20px;
+    width: 300px;
 }
 
 /*For the login page*/
-
 form label{
     display: flex;
-    margin-top: 20px;
     font-size: 18px;
+    margin-top: 20px;
 }
 input[type="button"]{
     border-radius: 5px;
-    width: 320px;
-    height: 35px;
-    margin-top: 20px;
     border: none;
     background-color: #a1a3a5;
     color: white;
     font-size: 18px;
+    height: 35px;
+    margin-top: 20px;
+    width: 320px;
 }
 input:hover {
     color:rgb(1, 7, 96);
 }
 
 p{
-    text-align: center;
-    padding-top: 20px;
     font-size: 15px;
+    padding-top: 20px;
+    text-align: center;
 }
 .para-2{
     text-align: center;
-    color: rgb(0, 0, 0);
-    font-size: 15px;
-    margin-top: -10px;
 }
 
 .para-2 a{
@@ -190,12 +158,12 @@ p{
 /* Login page*/
 
 .login-box{
-    width: 360px;
-    height: 300px;
-    margin: auto;
-    display: block;
     border-radius: 3px;
     background-color: white;
+    display: block;
+    height: 300px;
+    margin: auto;
+    width: 360px;
 }
 
 /* contact page*/
@@ -216,10 +184,10 @@ body{
     padding: 40px 60px;
 }
 .contact-right{
-    flex-basis: 40%;
-    padding: 40px;
     background:rgba(127, 103, 91, 1);
     color: #fff;
+    flex-basis: 40%;
+    padding: 40px;
 }
 h1{
     margin-bottom: 10px;
@@ -284,7 +252,6 @@ tr td{
 /*Collection page*/
 
 /*The banner (pictures)*/
-
 :root{
     --nav-ctrl-color: rgba(127, 103, 91, 1);
     --nav-ctrl-size: 1.25rem;
@@ -332,6 +299,7 @@ tr td{
     transition: all .2s ease;
     width: 0;
 }
+
 /* mouse hover over the dot*/
 .nav-dot:hover .nav-dot-inner {
     background-color: rgb(1, 7, 96);
@@ -340,8 +308,7 @@ tr td{
     width: var(--nav-ctrl-inner-size);
 }
 
-/*as we learnt, if many CSS elements appear the same way, they could be seperated  with a comma.*/
-
+/*As we learnt, if many CSS elements appear the same way, they could be seperated  with a comma.*/
 #bnr-1-ctrl:checked ~ .banner-nav #bnr-1-dot .nav-dot-inner,
 #bnr-2-ctrl:checked ~ .banner-nav #bnr-2-dot .nav-dot-inner,
 #bnr-3-ctrl:checked ~ .banner-nav #bnr-3-dot .nav-dot-inner,
